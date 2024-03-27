@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Primul container -->
+        <LinearLayout
+            android:id="@+id/firstContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Butonul pentru afișare/desfășurare -->
+            <Button
+                android:id="@+id/toggleFieldsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Additional Fields" />
+
+            <!-- Câmpurile text pentru introducere -->
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numele" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numărul de telefon"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adresa electronică" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adresa poștală" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/save"/>
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cancel"/>
+        </LinearLayout>
+
+
+        <!-- Al doilea container (inițial invizibil) -->
+        <LinearLayout
+            android:id="@+id/secondContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Câmpurile text adiționale -->
+            <EditText
+                android:id="@+id/positionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Poziția ocupată" />
+
+            <EditText
+                android:id="@+id/companyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Denumirea companiei" />
+
+            <EditText
+                android:id="@+id/websiteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Site-ul web" />
+
+            <EditText
+                android:id="@+id/directmesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Identificator mesagerie instantanee" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
